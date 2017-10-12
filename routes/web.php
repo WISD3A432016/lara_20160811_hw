@@ -15,10 +15,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+/*
 //home.index
 Route::get('home', ['as' => 'home.index', function () {
     return view('home');
 }]);
+*/
+//將 Route 的內容搬至 homeController 內
+Route::get('home', ['as' => 'home.index','users' => 'HomeController@index']);
+
 
 //about.index
 Route::get('about', ['as' => 'about.index', function () {
@@ -29,3 +34,4 @@ Route::get('about', ['as' => 'about.index', function () {
 Route::get('news', ['as' => 'news.index', function () {
     return view('news');
 }]);
+
