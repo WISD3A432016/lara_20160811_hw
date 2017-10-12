@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+//home.index
+Route::get('home', ['as' => 'home.index', function () {
+    return view('home');
+}]);
