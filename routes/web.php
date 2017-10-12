@@ -24,3 +24,8 @@ Route::get('home', ['as' => 'home.index', function () {
 Route::get('about', ['as' => 'about.index', function () {
     return view('about');
 }]);
+
+//news.index
+Route::get('news', ['as' => 'news.index', function () {
+    return view('news');
+}]);
