@@ -33,9 +33,11 @@ Route::get('about', ['as' => 'about.index', function () {
 //將 Route 的內容搬至 AboutController 內
 Route::get('about', ['as' => 'about.index','users' => 'AboutController@index']);
 
-
+/*
 //news.index
 Route::get('news', ['as' => 'news.index', function () {
     return view('news');
 }]);
-
+*/
+//將 Route 的內容搬至 NewsController 內
+Route::get('news', ['as' => 'news.index','users' => 'NewsController@index']);
