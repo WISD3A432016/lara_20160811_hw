@@ -19,3 +19,8 @@ Route::get('/', function () {
 Route::get('home', ['as' => 'home.index', function () {
     return view('home');
 }]);
+
+//about.index
+Route::get('about', ['as' => 'about.index', function () {
+    return view('about');
+}]);
