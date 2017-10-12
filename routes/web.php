@@ -24,11 +24,15 @@ Route::get('home', ['as' => 'home.index', function () {
 //將 Route 的內容搬至 homeController 內
 Route::get('home', ['as' => 'home.index','users' => 'HomeController@index']);
 
-
+/*
 //about.index
 Route::get('about', ['as' => 'about.index', function () {
     return view('about');
 }]);
+*/
+//將 Route 的內容搬至 AboutController 內
+Route::get('about', ['as' => 'about.index','users' => 'AboutController@index']);
+
 
 //news.index
 Route::get('news', ['as' => 'news.index', function () {
