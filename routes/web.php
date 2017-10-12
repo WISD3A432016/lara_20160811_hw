@@ -22,7 +22,7 @@ Route::get('home', ['as' => 'home.index', function () {
 }]);
 */
 //將 Route 的內容搬至 homeController 內
-Route::get('home', ['as' => 'home.index','users' => 'HomeController@index']);
+Route::get('home', ['as' => 'home.index','uses' => 'HomeController@index']);
 
 /*
 //about.index
@@ -31,7 +31,7 @@ Route::get('about', ['as' => 'about.index', function () {
 }]);
 */
 //將 Route 的內容搬至 AboutController 內
-Route::get('about', ['as' => 'about.index','users' => 'AboutController@index']);
+Route::get('about', ['as' => 'about.index','uses' => 'AboutController@index']);
 
 /*
 //news.index
@@ -40,4 +40,4 @@ Route::get('news', ['as' => 'news.index', function () {
 }]);
 */
 //將 Route 的內容搬至 NewsController 內
-Route::get('news', ['as' => 'news.index','users' => 'NewsController@index']);
+Route::get('news', ['as' => 'news.index','uses' => 'NewsController@index']);
